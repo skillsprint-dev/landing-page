@@ -1,0 +1,16 @@
+#!/bin/bash
+
+REGISTRY="registry.app.enting.org/"
+IMAGE="${REGISTRY}ss-landing-page"
+
+docker-build() {
+	docker build -t "${IMAGE}" .
+}
+
+docker-push() {
+	docker push "${IMAGE}"
+}
+
+docker-run() {
+	docker run -p 3000:3000 "${IMAGE}"
+}
