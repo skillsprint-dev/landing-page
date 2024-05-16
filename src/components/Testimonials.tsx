@@ -31,8 +31,8 @@ export default function Testimonials() {
     <>
       <section id="testimonials" className="bg-gray-50 dark:bg-gray-800">
         <div className="relative max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-          <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white text-center pb-12">Students Testimonials</h1>
-          <Carousel opts={{loop: true}}>
+          <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white text-center pb-8">Students Testimonials</h1>
+          <Carousel className="border-t border-gray-200 dark:border-gray-700 pt-8" opts={{loop: true}}>
             <CarouselContent>
               {testimonialProps.items.map((item, index) => (
                 <CarouselItem key={index}>
