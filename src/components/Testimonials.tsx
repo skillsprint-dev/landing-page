@@ -14,15 +14,21 @@ export default function Testimonials() {
   const testimonialProps = {
     items: [
       {
-        text: "\"Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.\"",
-        author: "John Doe",
-        position: "CEO, Google Inc.",
+        text: "\"The personalized training programs were exactly what I needed to to prepare for my interviews. My instructor were knowledgeable and supportive every step of the way!\"",
+        author: "Iris W.",
+        position: "Software Engineer, McAfee",
         image: null
       },
       {
-        text: "\"Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.\"",
-        author: "Alice Doe",
-        position: "CEO, Mozilla Inc.",
+        text: "\"The instructors were not only experts in their field but also incredible mentors. Their support made all the difference in passing my job interview.\"",
+        author: "Boyu T.",
+        position: "SDE, Shopify",
+        image: null
+      },
+      {
+        text: "\"I really appreciated the Mock interviews because they helped me discover what I need to improve on the most.\"",
+        author: "Harry Z.",
+        position: "SDE, Pivot",
         image: null
       },
     ]

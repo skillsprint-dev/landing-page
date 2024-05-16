@@ -24,7 +24,7 @@ export default function Header() {
       },
       {
         name: "Contact",
-        href: "#contact",
+        href: "#footer",
       }
     ],
   }

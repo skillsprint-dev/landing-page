@@ -9,7 +9,7 @@ export default function Footer() {
   }
   return (
     <>
-      <footer className="bg-white dark:bg-gray-800">
+      <footer id="footer" className="bg-white dark:bg-gray-800">
           <div className="max-w-screen-xl p-4 mx-auto py-16 md:p-8 lg:p-10 lg:py-20">
               <div className="text-center">
                   <a href="#" className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">

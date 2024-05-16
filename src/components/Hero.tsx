@@ -1,10 +1,10 @@
 import * as React from "react"
-import Link from "next/link"
+import ActionButton from "@/components/ActionButton"
 
 export default function Hero() {
   const heroProps = {
-    text: "From Learning To Earning, <br /> Offer Guaranteed!",
-    subtext: "Lorem ipsum dolor sit amet, <br /> qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    text: "Turn Dreams Into Offers<br />Let's Make It Happen",
+    subtext: "With our personalized mentorship and savvy job-hunting strategies,<br /> Transition from aspiring coder to employed engineer has never been easier.",
     button: {
       text: "Book a Free Assessment",
       href: "#",
@@ -14,16 +14,12 @@ export default function Hero() {
     <>
       <section id="home" className="bg-white dark:bg-gray-900">
         <div className="relative flex items-center h-screen">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover brightness-50 filter"></div>
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover brightness-[0.3] filter"></div>
           <div className="relative z-10 max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:pt-28 text-center">
               <div className="mr-auto place-self-center">
                   <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-white" dangerouslySetInnerHTML={{ __html: heroProps.text}}></h1>
                   <p className="mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-white" dangerouslySetInnerHTML={{ __html: heroProps.subtext}}></p>
-                  <div className="space-y-4 sm:space-y-0 sm:space-x-4">
-                      <a href={heroProps.button.href} className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 hvr-sweep-to-right dark:bg-gray-700">
-                        {heroProps.button.text}
-                      </a> 
-                  </div>
+                  <ActionButton />
               </div>
           </div>
         </div>
