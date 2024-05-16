@@ -44,7 +44,7 @@ export default function Services() {
   }
   return (
     <>
-      <section id="services" className="bg-white dark:bg-gray-900 max-h-screen">
+      <section id="services" className="bg-white dark:bg-gray-900">
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-white text-center">Our Services</h1>
             <ul role="list" className="pt-8 border-t border-gray-200 my-7 dark:border-gray-700 flex flex-wrap">
