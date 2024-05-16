@@ -1,33 +1,32 @@
 import * as React from "react"
-import Link from "next/link"
 
 export default function Features() {
   const featureProps = {
     items: [
       {
-        text: "Personalized Training Program",
-        subtext: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        text: "Personalized Training Programs",
+        subtext: "Our instructors carefully craft personalized training programs based on your strengths and weaknesses, so you can focus on what matters the most.",
         image: "training_program.jpg",
       },
       {
-        text: "1-on-1 sessions with instructor",
-        subtext: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        text: "1-on-1 Sessions with Instructors",
+        subtext: "Our instructors are themselves highly skilled software engineers. They are your mentors and supporters. Using their experience to guide you on the right path.",
         image: "1-on-1.jpg",
       },
       {
         text: "Resume Perfection Service",
-        subtext: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        subtext: "Having read through thousands of resumes, our team knows what works and what doesn't. We will help you craft the perfect resume that stand out from the crowd.",
         image: "resume_service.jpg",
       },
       {
-        text: "Mock Interview",
-        subtext: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        text: "Mock Interviews",
+        subtext: "You will gain an incredible amount of confidence after your first mock interview. But we won't stop there. By the end of the program, going to a real interview will feel like a walk in the park, if you like parks.",
         // image: "https://placehold.co/600x400/EEE/31343C",
         image: "mock_interview.jpg",
       },
       {
         text: "Career Referral",
-        subtext: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+        subtext: "Our connections with the employers bring you exclusive referral opportunities. We will help you find the right fit for your career.",
         image: "career_referral.jpg",
       },
     ]

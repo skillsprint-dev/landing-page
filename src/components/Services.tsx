@@ -5,28 +5,40 @@ export default function Services() {
   const servicesProps = {
     items: [
       {
-        text: "1-on-1 career advice and planning",
+        text: "Large-Scale Project Experience",
       },
       {
-        text: "Job search and interview skills",
+        text: "Personalized Training Programs",
       },
       {
-        text: "In depth Knowledge and Training",
+        text: "Mock Interviews",
       },
       {
-        text: "Real-world project experience",
+        text: "1-on-1 Career Advice and Planning",
       },
       {
-        text: "Behavioural Interview Skills",
+        text: "Design Patterns and Algorithms",
       },
       {
-        text: "Mock Interview",
+        text: "Database and SQL Skills",
+      },
+      {
+        text: "Job search skills",
+      },
+      {
+        text: "Coding Interview Skills",
+      },
+      {
+        text: "Professional Work Ethics",
       },
       {
         text: "Network and referral opportunities",
       },
       {
-        text: "Free Access to ChatGPT4",
+        text: "AI and ML skills",
+      },
+      {
+        text: "Resume Preparation",
       },
     ]
   }

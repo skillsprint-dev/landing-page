@@ -14,3 +14,7 @@ docker-push() {
 docker-run() {
 	docker run -p 3000:3000 "${IMAGE}"
 }
+
+run() {
+	npm run dev
+}
