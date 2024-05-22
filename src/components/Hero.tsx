@@ -3,8 +3,8 @@ import ActionButton from "@/components/ActionButton"
 
 export default function Hero() {
   const heroProps = {
-    text: "Turn Dreams Into Offers<br />Let's Make It Happen",
-    subtext: "With our personalized mentorship and savvy job-hunting strategies,<br /> Transition from aspiring coder to employed engineer has never been easier.",
+    text: "Turn <span class=\"\">Dreams</span> Into <span class=\"relative underline-clip\">Offers</span>",
+    subtext: "With our <span class=\"font-bold\">personalized mentorship</span> and savvy <span class=\"font-bold\">job-hunting strategies</span>,<br /> Transition from aspiring coder to <span class=\"font-bold\">employed engineer</span> has never been easier.",
     button: {
       text: "Book a Free Assessment",
       href: "#",

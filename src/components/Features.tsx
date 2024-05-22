@@ -37,7 +37,7 @@ export default function Features() {
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
             { featureProps.items.map((item, index) => (
                 <div key={index} className={ "items-center gap-8 xl:gap-16 " + (index % 2 === 0 ? "flex flex-row-reverse" : "flex") }>
-                    <img className="mb-4 rounded-lg lg:mb-0 lg:flex w-1/2 aspect-video object-cover" src={item.image} alt="dashboard feature image" />
+                    <img className="mb-4 rounded-lg md:flex w-1/2 aspect-video object-cover" src={item.image} alt="dashboard feature image" />
                     <div className="text-gray-500 sm:text-lg dark:text-gray-400">
                         <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">{item.text}</h2>
                         <p className="mb-8 font-light lg:text-xl">{item.subtext}</p>

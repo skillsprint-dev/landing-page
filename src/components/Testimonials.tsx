@@ -62,8 +62,8 @@ export default function Testimonials() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious  className="hidden md:flex"/>
+            <CarouselNext  className="hidden md:flex"/>
           </Carousel>
         </div>
       </section>
