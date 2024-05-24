@@ -15,6 +15,10 @@ docker-run() {
 	docker run -p 3000:3000 "${IMAGE}"
 }
 
+app-reload() {
+	kubectl rollout restart -n public deploy/ss-landing-page
+}
+
 run() {
 	npm run dev
 }
