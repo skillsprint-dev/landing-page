@@ -1,29 +1,36 @@
+"use client"
 import * as React from "react"
 import Link from "next/link"
+import { useTranslation } from "react-i18next"
+import "../../i18n.mjs"
 
 export default function Header() {
+  const { t, i18n } = useTranslation()
+  const changeLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en');
+  }
   const headerProps = {
     logo: "/SkillSprint_logo.png",
     title: "SkillSprint",
     navItems: [
       {
-        name: "Home",
+        name: t("headerPage.headerPropsNavItems.0.home"),
         href: "#home",
       },
       {
-        name: "Features",
+        name: t("headerPage.headerPropsNavItems.1.features"),
         href: "#features",
       },
       {
-        name: "Services",
+        name: t("headerPage.headerPropsNavItems.2.services"),
         href: "#services",
       },
       {
-        name: "Testimonials",
+        name: t("headerPage.headerPropsNavItems.3.testimonials"),
         href: "#testimonials",
       },
       {
-        name: "Contact",
+        name: t("headerPage.headerPropsNavItems.4.contact"),
         href: "#footer",
       }
     ],
@@ -56,6 +63,7 @@ export default function Header() {
                   </li>
                 ))
               }
+              <button onClick={changeLanguage}>EN / 中</button>
             </ul>
           </div>
         </div>
