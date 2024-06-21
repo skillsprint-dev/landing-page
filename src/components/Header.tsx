@@ -1,33 +1,38 @@
-import * as React from "react"
-import Link from "next/link"
+"use client";
+import * as React from "react";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = () => i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en');
   const headerProps = {
     logo: "/SkillSprint_logo.png",
     title: "SkillSprint",
     navItems: [
       {
-        name: "Home",
+        name: t("headerPage.headerPropsNavItems.home"),
         href: "#home",
       },
       {
-        name: "Features",
+        name: t("headerPage.headerPropsNavItems.features"),
         href: "#features",
       },
       {
-        name: "Services",
+        name: t("headerPage.headerPropsNavItems.services"),
         href: "#services",
       },
       {
-        name: "Testimonials",
+        name: t("headerPage.headerPropsNavItems.testimonials"),
         href: "#testimonials",
       },
       {
-        name: "Contact",
+        name: t("headerPage.headerPropsNavItems.contact"),
         href: "#footer",
       }
     ],
-  }
+  };
   return (
     <header className="z-50 fixed w-full">
       <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
@@ -56,10 +61,11 @@ export default function Header() {
                   </li>
                 ))
               }
+              <button onClick={changeLanguage}>EN / 中</button>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-  )
+  );
 }
