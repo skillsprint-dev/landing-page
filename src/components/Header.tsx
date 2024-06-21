@@ -1,30 +1,35 @@
-import * as React from "react";
+"use client";
+import * as React from "react";;
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";;
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = () => i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en');
   const headerProps = {
     logo: "/SkillSprint_logo.png",
     title: "SkillSprint",
     navItems: [
       {
-        name: "Home",
+        name: t("headerPage.headerPropsNavItems.home"),
         href: "#home",
       },
       {
-        name: "Features",
+        name: t("headerPage.headerPropsNavItems.features"),
         href: "#features",
       },
       {
-        name: "Services",
+        name: t("headerPage.headerPropsNavItems.services"),
         href: "#services",
       },
       {
-        name: "Testimonials",
+        name: t("headerPage.headerPropsNavItems.testimonials"),
         href: "#testimonials",
       },
       {
-        name: "Contact",
+        name: t("headerPage.headerPropsNavItems.contact"),
         href: "#footer",
       },
     ],
@@ -97,6 +102,7 @@ export default function Header() {
                   </a>
                 </li>
               ))}
+              <button onClick={changeLanguage}>EN / 中</button>
               <SignedOut>
                 <SignInButton mode="modal">
                   <button className="px-4 rounded-full bg-white text-black text-sm text-gray-700 font-semibold border border-black hover:bg-slate-200">
