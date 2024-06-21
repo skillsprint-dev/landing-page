@@ -41,7 +41,8 @@
             "services": "Services",
             "testimonials": "Testimonials",
             "contact": "Contact"
-        }
+        },
+        "signInButtonText": "Sign In"
     },
     "heroPage": {
         "heroProps": {

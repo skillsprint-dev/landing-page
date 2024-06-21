@@ -106,7 +106,7 @@ export default function Header() {
               <SignedOut>
                 <SignInButton mode="modal">
                   <button className="px-4 rounded-full bg-white text-black text-sm text-gray-700 font-semibold border border-black hover:bg-slate-200">
-                    Sign In
+                    {t('headerPage.signInButtonText')}
                   </button>
                 </SignInButton>
               </SignedOut>
