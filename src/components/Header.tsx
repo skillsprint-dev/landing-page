@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+
 export default function Header() {
   const headerProps = {
     logo: "/SkillSprint_logo.png",
@@ -96,19 +97,17 @@ export default function Header() {
                   </a>
                 </li>
               ))}
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button className="px-4 rounded-full bg-white text-black text-sm text-gray-700 font-semibold border border-black hover:bg-slate-200">
+                    Sign In
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
             </ul>
-          </div>
-          <div className="flex">
-            <SignedOut>
-              <SignInButton>
-                <button className="px-4 py-2 rounded-full bg-white text-black text-sm font-semibold border border-black">
-                  Sign In
-                </button>
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
           </div>
         </div>
       </nav>
