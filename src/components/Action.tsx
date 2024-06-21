@@ -1,20 +1,20 @@
-"use client"
-import * as React from "react"
-import Link from "next/link"
-import ActionButton from "@/components/ActionButton"
-import { useTranslation } from "react-i18next"
-import "../../i18n.mjs"
+"use client";
+import * as React from "react";
+import Link from "next/link";
+import ActionButton from "@/components/ActionButton";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";
 
 export default function Action() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const actionProps = {
-    text: t("actionPage.actionPropsText"),
-    subtext: t("actionPage.actionPropsSubtext"),
+    text: t("actionPage.actionProps.text"),
+    subtext: t("actionPage.actionProps.description"),
     button: {
       text: "Book a Free Assessment",
       href: "#",
     },
-  }
+  };
   return (
     <>
       <div>
@@ -29,5 +29,5 @@ export default function Action() {
         </section>
       </div>
     </>
-  )
+  );
 }

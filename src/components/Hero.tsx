@@ -1,19 +1,19 @@
-"use client"
-import * as React from "react"
-import ActionButton from "@/components/ActionButton"
-import { useTranslation } from "react-i18next"
-import "../../i18n.mjs"
+"use client";
+import * as React from "react";
+import ActionButton from "@/components/ActionButton";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";
 
 export default function Hero() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const heroProps = {
-    text: t("heroPage.heroPropsText"),
-    subtext: t("heroPage.heroPropsSubtext"),
+    text: t("heroPage.heroProps.text"),
+    subtext: t("heroPage.heroProps.description"),
     button: {
       text: "Book a Free Assessment",
       href: "#",
     },
-  }
+  };
   return (
     <>
       <section id="home" className="bg-white dark:bg-gray-900">
@@ -29,5 +29,5 @@ export default function Hero() {
         </div>
       </section>
     </>
-  )
+  );
 }

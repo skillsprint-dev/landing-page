@@ -1,114 +1,86 @@
 {
     "actionPage": {
-        "actionPropsText": "准备好开始了吗？",
-        "actionPropsSubtext": "了解我们的定制辅导如何帮助您实现目标。<br /> 今天预约一个免费的评估，迈出职业成功的第一步！"
+        "actionProps": {
+            "text": "准备好开始了吗？",
+            "description": "了解我们的定制辅导如何帮助您实现目标。<br/> 今天预约一个免费的评估，迈出职业成功的第一步！"
+        }
     },
     "actionButtonPage": {
-        "bookAssessmentButtonText": "预约免费评估"
+        "bookAssessmentButton": {
+            "text": "预约免费评估"
+        }
     },
     "featuresPage": {
-        "featurePropsItems": [
-            {
-                "personalizedTrainingProgramsText": "个性化培训课程",
-                "personalizedTrainingProgramsSubtext": "我们的导师根据您的优势和劣势精心制定个性化培训课程，让您专注于最重要的事情。"
+        "featurePropsItems": {
+            "personalizedTrainingPrograms": {
+                "text": "个性化培训课程",
+                "description": "我们的导师根据您的优势和劣势精心制定个性化培训课程，让您专注于最重要的事情。"
             },
-            {
-                "1On1SessionsWithInstructorsText": "与导师一对一课程",
-                "1On1SessionsWithInstructorsSubtext": "我们的导师本身就是高技能的软件工程师。他们是您的导师和支持者。利用他们的经验指导您走上正确的道路。"
+            "1On1SessionsWithInstructors": {
+                "text": "与导师一对一课程",
+                "description": "我们的导师本身就是高技能的软件工程师。他们是您的导师和支持者。利用他们的经验指导您走上正确的道路。"
             },
-            {
-                "resumePerfectionServiceText": "简历完美服务",
-                "resumePerfectionServiceSubtext": "我们的团队阅读了成千上万份简历，知道什么有效，什么无效。我们将帮助您制作出脱颖而出的完美简历。"
+            "resumePerfectionService": {
+                "text": "简历完美服务",
+                "description": "我们的团队阅读了成千上万份简历，知道什么有效，什么无效。我们将帮助您制作出脱颖而出的完美简历。"
             },
-            {
-                "mockInterviewsText": "模拟面试",
-                "mockInterviewsSubText": "在第一次模拟面试后，您将获得极大的信心。但我们不会就此止步。到课程结束时，去参加真正的面试将像散步一样轻松，如果您喜欢散步的话。"
+            "mockInterviews": {
+                "text": "模拟面试",
+                "description": "在第一次模拟面试后，您将获得极大的信心。但我们不会就此止步。到课程结束时，去参加真正的面试将像散步一样轻松，如果您喜欢散步的话。"
             },
-            {
-                "careerReferralText": "职业推荐",
-                "careerReferralSubtext": "我们与雇主的联系为您带来独家的推荐机会。我们将帮助您找到合适的职业。"
+            "careerReferral": {
+                "text": "职业推荐",
+                "description": "我们与雇主的联系为您带来独家的推荐机会。我们将帮助您找到合适的职业。"
             }
-        ]
+        }
     },
     "headerPage": {
-        "headerPropsNavItems": [
-            {
-                "home": "首页"
-            },
-            {
-                "features": "特点"
-            },
-            {
-                "services": "服务"
-            },
-            {
-                "testimonials": "客户评价"
-            },
-            {
-                "contact": "联系方式"
-            }
-        ]
+        "headerPropsNavItems": {
+            "home": "首页",
+            "features": "特点",
+            "services": "服务",
+            "testimonials": "客户评价",
+            "contact": "联系方式"
+        }
     },
     "heroPage": {
-        "heroPropsText": "将<span class=\"\">梦想</span>转化为<span class=\"relative underline-clip\">机会</span>",
-        "heroPropsSubtext": "通过我们的<span class=\"font-bold\">个性化导师指导</span>和精明的<span class=\"font-bold\">求职策略</span>，<br /> 从有志成为程序员到成为<span class=\"font-bold\">就业工程师</span>，从未如此轻松。"
+        "heroProps": {
+            "text": "将<span class=\"\">梦想</span>转化为<span class=\"relative underline-clip\">机会</span>",
+            "description": "通过我们的<span class=\"font-bold\">个性化导师指导</span>和精明的<span class=\"font-bold\">求职策略</span>，<br/> 从有志成为程序员到成为<span class=\"font-bold\">就业工程师</span>，从未如此轻松。"
+        }
     },
     "servicesPage": {
-        "servicesPropsItems": [
-            {
-                "largeScaleProjectExperience": "大规模项目经验"
-            },
-            {
-                "personalizedTrainingPrograms": "个性化培训课程"
-            },
-            {
-                "mockInterviews": "模拟面试"
-            },
-            {
-                "1On1CareerAdviceAndPlanning": "1对1职业建议与规划"
-            },
-            {
-                "designPatternsAndAlgorithms": "设计模式与算法"
-            },
-            {
-                "databaseAndSQLSkills": "数据库与SQL技能"
-            },
-            {
-                "jobSearchSkills": "求职技能"
-            },
-            {
-                "codingInterviewSkills": "编程面试技巧"
-            },
-            {
-                "professionalWorkEthics": "职业道德"
-            },
-            {
-                "networkAndReferralOpportunities": "网络与推荐机会"
-            },
-            {
-                "aiAndMlSkills": "人工智能与机器学习技能"
-            },
-            {
-                "resumePreparation": "简历准备"
-            }
-        ],
+        "servicesPropsItems": {
+            "largeScaleProjectExperience": "大规模项目经验",
+            "personalizedTrainingPrograms": "个性化培训课程",
+            "mockInterviews": "模拟面试",
+            "1On1CareerAdviceAndPlanning": "1对1职业建议与规划",
+            "designPatternsAndAlgorithms": "设计模式与算法",
+            "databaseAndSQLSkills": "数据库与SQL技能",
+            "jobSearchSkills": "求职技能",
+            "codingInterviewSkills": "编程面试技巧",
+            "professionalWorkEthics": "职业道德",
+            "networkAndReferralOpportunities": "网络与推荐机会",
+            "aiAndMlSkills": "人工智能与机器学习技能",
+            "resumePreparation": "简历准备"
+        },
         "ourServices": "我们的服务"
     },
     "testimonialsPage": {
-        "testimonialPropsItems": [
-            {
-                "irisText": "\"定制的培训课程正是我准备面试所需的。我的导师在每一步都非常有知识和支持！\"",
-                "irisPosition": "软件工程师，McAfee"
+        "testimonialPropsItems": {
+            "iris": {
+                "text": "\"定制的培训课程正是我准备面试所需的。我的导师在每一步都非常有知识和支持！\"",
+                "position": "软件工程师，McAfee"
             },
-            {
-                "boyuText": "\"导师不仅是他们领域的专家，还是令人难以置信的导师。他们的支持在我通过面试中起到了关键作用。\"",
-                "boyuPosition": "软件开发工程师，Shopify"
+            "boyu": {
+                "text": "\"导师不仅是他们领域的专家，还是令人难以置信的导师。他们的支持在我通过面试中起到了关键作用。\"",
+                "position": "软件开发工程师，Shopify"
             },
-            {
-                "harryText": "\"我非常感激模拟面试，因为它们帮助我发现了我最需要改进的地方。\"",
-                "harryPosition": "软件开发工程师，Pivot"
+            "harry": {
+                "text": "\"我非常感激模拟面试，因为它们帮助我发现了我最需要改进的地方。\"",
+                "position": "软件开发工程师，Pivot"
             }
-        ],
+        },
         "studentsTestimonials": "学生评价"
     }
 }

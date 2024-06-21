@@ -1,51 +1,51 @@
-"use client"
-import * as React from "react"
-import Link from "next/link"
-import { useTranslation } from "react-i18next"
-import "../../i18n.mjs"
+"use client";
+import * as React from "react";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";
 
 export default function Services() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const servicesProps = {
     items: [
       {
-        text: t("servicesPage.servicesPropsItems.0.largeScaleProjectExperience"),
+        text: t("servicesPage.servicesPropsItems.largeScaleProjectExperience"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.1.personalizedTrainingPrograms"),
+        text: t("servicesPage.servicesPropsItems.personalizedTrainingPrograms"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.2.mockInterviews"),
+        text: t("servicesPage.servicesPropsItems.mockInterviews"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.3.1On1CareerAdviceAndPlanning"),
+        text: t("servicesPage.servicesPropsItems.1On1CareerAdviceAndPlanning"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.4.designPatternsAndAlgorithms"),
+        text: t("servicesPage.servicesPropsItems.designPatternsAndAlgorithms"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.5.databaseAndSQLSkills"),
+        text: t("servicesPage.servicesPropsItems.databaseAndSQLSkills"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.6.jobSearchSkills"),
+        text: t("servicesPage.servicesPropsItems.jobSearchSkills"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.7.codingInterviewSkills"),
+        text: t("servicesPage.servicesPropsItems.codingInterviewSkills"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.8.professionalWorkEthics"),
+        text: t("servicesPage.servicesPropsItems.professionalWorkEthics"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.9.networkAndReferralOpportunities"),
+        text: t("servicesPage.servicesPropsItems.networkAndReferralOpportunities"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.10.aiAndMlSkills"),
+        text: t("servicesPage.servicesPropsItems.aiAndMlSkills"),
       },
       {
-        text: t("servicesPage.servicesPropsItems.11.resumePreparation"),
+        text: t("servicesPage.servicesPropsItems.resumePreparation"),
       },
     ]
-  }
+  };
   return (
     <>
       <section id="services" className="bg-white dark:bg-gray-900">
@@ -62,5 +62,5 @@ export default function Services() {
         </div>
       </section>
     </>
-  )
+  );
 }

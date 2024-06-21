@@ -1,114 +1,86 @@
 {
     "actionPage": {
-        "actionPropsText": "Ready to get started?",
-        "actionPropsSubtext": "Discover how our tailored tutoring can help you achieve your goals.<br /> Book a free assessment today and take the first step towards career success!"
+        "actionProps": {
+            "text": "Ready to get started?",
+            "description": "Discover how our tailored tutoring can help you achieve your goals.<br/> Book a free assessment today and take the first step towards career success!"
+        }
     },
     "actionButtonPage": {
-        "bookAssessmentButtonText": "Book a Free Assessment"
+        "bookAssessmentButton": {
+            "text": "Book a Free Assessment"
+        }
     },
     "featuresPage": {
-        "featurePropsItems": [
-            {
-                "personalizedTrainingProgramsText": "Personalized Training Programs",
-                "personalizedTrainingProgramsSubtext": "Our instructors carefully craft personalized training programs based on your strengths and weaknesses, so you can focus on what matters the most."
+        "featurePropsItems": {
+            "personalizedTrainingPrograms": {
+                "text": "Personalized Training Programs",
+                "description": "Our instructors carefully craft personalized training programs based on your strengths and weaknesses, so you can focus on what matters the most."
             },
-            {
-                "1On1SessionsWithInstructorsText": "1-on-1 Sessions with Instructors",
-                "1On1SessionsWithInstructorsSubtext": "Our instructors are themselves highly skilled software engineers. They are your mentors and supporters. Using their experience to guide you on the right path."
+            "1On1SessionsWithInstructors": {
+                "text": "1-on-1 Sessions with Instructors",
+                "description": "Our instructors are themselves highly skilled software engineers. They are your mentors and supporters. Using their experience to guide you on the right path."
             },
-            {
-                "resumePerfectionServiceText": "Resume Perfection Service",
-                "resumePerfectionServiceSubtext": "Having read through thousands of resumes, our team knows what works and what doesn't. We will help you craft the perfect resume that stand out from the crowd."
+            "resumePerfectionService": {
+                "text": "Resume Perfection Service",
+                "description": "Having read through thousands of resumes, our team knows what works and what doesn't. We will help you craft the perfect resume that stand out from the crowd."
             },
-            {
-                "mockInterviewsText": "Mock Interviews",
-                "mockInterviewsSubText": "You will gain an incredible amount of confidence after your first mock interview. But we won't stop there. By the end of the program, going to a real interview will feel like a walk in the park, if you like parks."
+            "mockInterviews": {
+                "text": "Mock Interviews",
+                "description": "You will gain an incredible amount of confidence after your first mock interview. But we won't stop there. By the end of the program, going to a real interview will feel like a walk in the park, if you like parks."
             },
-            {
-                "careerReferralText": "Career Referral",
-                "careerReferralSubtext": "Our connections with the employers bring you exclusive referral opportunities. We will help you find the right fit for your career."
+            "careerReferral": {
+                "text": "Career Referral",
+                "description": "Our connections with the employers bring you exclusive referral opportunities. We will help you find the right fit for your career."
             }
-        ]
+        }
     },
     "headerPage": {
-        "headerPropsNavItems": [
-            {
-                "home": "Home"
-            },
-            {
-                "features": "Features"
-            },
-            {
-                "services": "Services"
-            },
-            {
-                "testimonials": "Testimonials"
-            },
-            {
-                "contact": "Contact"
-            }
-        ]
+        "headerPropsNavItems": {
+            "home": "Home",
+            "features": "Features",
+            "services": "Services",
+            "testimonials": "Testimonials",
+            "contact": "Contact"
+        }
     },
     "heroPage": {
-        "heroPropsText": "Turn <span class=\"\">Dreams</span> Into <span class=\"relative underline-clip\">Offers</span>",
-        "heroPropsSubtext": "With our <span class=\"font-bold\">personalized mentorship</span> and savvy <span class=\"font-bold\">job-hunting strategies</span>,<br /> Transition from aspiring coder to <span class=\"font-bold\">employed engineer</span> has never been easier."
+        "heroProps": {
+            "text": "Turn <span class=\"\">Dreams</span> Into <span class=\"relative underline-clip\">Offers</span>",
+            "description": "With our <span class=\"font-bold\">personalized mentorship</span> and savvy <span class=\"font-bold\">job-hunting strategies</span>,<br/> Transition from aspiring coder to <span class=\"font-bold\">employed engineer</span> has never been easier."
+        }
     },
     "servicesPage": {
-        "servicesPropsItems": [
-            {
-                "largeScaleProjectExperience": "Large-Scale Project Experience"
-            },
-            {
-                "personalizedTrainingPrograms": "Personalized Training Programs"
-            },
-            {
-                "mockInterviews": "Mock Interviews"
-            },
-            {
-                "1On1CareerAdviceAndPlanning": "1-on-1 Career Advice and Planning"
-            },
-            {
-                "designPatternsAndAlgorithms": "Design Patterns and Algorithms"
-            },
-            {
-                "databaseAndSQLSkills": "Database and SQL Skills"
-            },
-            {
-                "jobSearchSkills": "Job Search Skills"
-            },
-            {
-                "codingInterviewSkills": "Coding Interview Skills"
-            },
-            {
-                "professionalWorkEthics": "Professional Work Ethics"
-            },
-            {
-                "networkAndReferralOpportunities": "Network and Referral Opportunities"
-            },
-            {
-                "aiAndMlSkills": "AI and ML Skills"
-            },
-            {
-                "resumePreparation": "Resume Preparation"
-            }
-        ],
+        "servicesPropsItems": {
+            "largeScaleProjectExperience": "Large-Scale Project Experience",
+            "personalizedTrainingPrograms": "Personalized Training Programs",
+            "mockInterviews": "Mock Interviews",
+            "1On1CareerAdviceAndPlanning": "1-on-1 Career Advice and Planning",
+            "designPatternsAndAlgorithms": "Design Patterns and Algorithms",
+            "databaseAndSQLSkills": "Database and SQL Skills",
+            "jobSearchSkills": "Job Search Skills",
+            "codingInterviewSkills": "Coding Interview Skills",
+            "professionalWorkEthics": "Professional Work Ethics",
+            "networkAndReferralOpportunities": "Network and Referral Opportunities",
+            "aiAndMlSkills": "AI and ML Skills",
+            "resumePreparation": "Resume Preparation"
+        },
         "ourServices": "Our Services"
     },
     "testimonialsPage": {
-        "testimonialPropsItems": [
-            {
-                "irisText": "\"The personalized training programs were exactly what I needed to to prepare for my interviews. My instructor were knowledgeable and supportive every step of the way!\"",
-                "irisPosition": "Software Engineer, McAfee"
+        "testimonialPropsItems": {
+            "iris": {
+                "text": "\"The personalized training programs were exactly what I needed to to prepare for my interviews. My instructor were knowledgeable and supportive every step of the way!\"",
+                "position": "Software Engineer, McAfee"
             },
-            {
-                "boyuText": "\"The instructors were not only experts in their field but also incredible mentors. Their support made all the difference in passing my job interview.\"",
-                "boyuPosition": "SDE, Shopify"
+            "boyu": {
+                "text": "\"The instructors were not only experts in their field but also incredible mentors. Their support made all the difference in passing my job interview.\"",
+                "position": "SDE, Shopify"
             },
-            {
-                "harryText": "\"I really appreciated the Mock interviews because they helped me discover what I need to improve on the most.\"",
-                "harryPosition": "SDE, Pivot"
+            "harry": {
+                "text": "\"I really appreciated the Mock interviews because they helped me discover what I need to improve on the most.\"",
+                "position": "SDE, Pivot"
             }
-        ],
+        },
         "studentsTestimonials": "Students Testimonials"
     }
 }

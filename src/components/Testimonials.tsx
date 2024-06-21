@@ -1,8 +1,8 @@
-"use client"
-import * as React from "react"
-import Link from "next/link"
-import { useTranslation } from "react-i18next"
-import "../../i18n.mjs"
+"use client";
+import * as React from "react";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";
 
 import {
   Carousel,
@@ -10,33 +10,33 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 
 
 export default function Testimonials() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const testimonialProps = {
     items: [
       {
-        text: t("testimonialsPage.testimonialPropsItems.0.irisText"),
+        text: t("testimonialsPage.testimonialPropsItems.iris.text"),
         author: "Iris W.",
-        position: t("testimonialsPage.testimonialPropsItems.0.irisPosition"),
+        position: t("testimonialsPage.testimonialPropsItems.iris.position"),
         image: null
       },
       {
-        text: t("testimonialsPage.testimonialPropsItems.1.boyuText"),
+        text: t("testimonialsPage.testimonialPropsItems.boyu.text"),
         author: "Boyu T.",
-        position: t("testimonialsPage.testimonialPropsItems.1.boyuPosition"),
+        position: t("testimonialsPage.testimonialPropsItems.boyu.position"),
         image: null
       },
       {
-        text: t("testimonialsPage.testimonialPropsItems.2.harryText"),
+        text: t("testimonialsPage.testimonialPropsItems.harry.text"),
         author: "Harry Z.",
-        position: t("testimonialsPage.testimonialPropsItems.2.harryPosition"),
+        position: t("testimonialsPage.testimonialPropsItems.harry.position"),
         image: null
       },
     ]
-  }
+  };
   return (
     <>
       <section id="testimonials" className="bg-gray-50 dark:bg-gray-800">
@@ -72,5 +72,5 @@ export default function Testimonials() {
         </div>
       </section>
     </>
-  )
+  );
 }

@@ -1,40 +1,40 @@
-"use client"
-import * as React from "react"
-import { useTranslation } from "react-i18next"
-import "../../i18n.mjs"
+"use client";
+import * as React from "react";
+import { useTranslation } from "react-i18next";
+import "../../i18n.mjs";
 
 export default function Features() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const featureProps = {
     items: [
       {
-        text: t("featuresPage.featurePropsItems.0.personalizedTrainingProgramsText"),
-        subtext: t("featuresPage.featurePropsItems.0.personalizedTrainingProgramsSubtext"),
+        text: t("featuresPage.featurePropsItems.personalizedTrainingPrograms.text"),
+        subtext: t("featuresPage.featurePropsItems.personalizedTrainingPrograms.description"),
         image: "training_program.jpg",
       },
       {
-        text: t("featuresPage.featurePropsItems.1.1On1SessionsWithInstructorsText"),
-        subtext: t("featuresPage.featurePropsItems.1.1On1SessionsWithInstructorsSubtext"),
+        text: t("featuresPage.featurePropsItems.1On1SessionsWithInstructors.text"),
+        subtext: t("featuresPage.featurePropsItems.1On1SessionsWithInstructors.description"),
         image: "1-on-1.jpg",
       },
       {
-        text: t("featuresPage.featurePropsItems.2.resumePerfectionServiceText"),
-        subtext: t("featuresPage.featurePropsItems.2.resumePerfectionServiceSubtext"),
+        text: t("featuresPage.featurePropsItems.resumePerfectionService.text"),
+        subtext: t("featuresPage.featurePropsItems.resumePerfectionService.description"),
         image: "resume_service.jpg",
       },
       {
-        text: t("featuresPage.featurePropsItems.3.mockInterviewsText"),
-        subtext: t("featuresPage.featurePropsItems.3.mockInterviewsSubText"),
+        text: t("featuresPage.featurePropsItems.mockInterviews.text"),
+        subtext: t("featuresPage.featurePropsItems.mockInterviews.description"),
         // image: "https://placehold.co/600x400/EEE/31343C",
         image: "mock_interview.jpg",
       },
       {
-        text: t("featuresPage.featurePropsItems.4.careerReferralText"),
-        subtext: t("featuresPage.featurePropsItems.4.careerReferralSubtext"),
+        text: t("featuresPage.featurePropsItems.careerReferral.text"),
+        subtext: t("featuresPage.featurePropsItems.careerReferral.description"),
         image: "career_referral.jpg",
       },
     ]
-  }
+  };
   return (
     <>
       <section id="features" className="bg-gray-50 dark:bg-gray-800">
@@ -51,5 +51,5 @@ export default function Features() {
         </div>
       </section>
     </>
-  )
+  );
 }
