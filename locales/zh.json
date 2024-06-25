@@ -41,7 +41,8 @@
             "services": "服务",
             "testimonials": "客户评价",
             "contact": "联系方式"
-        }
+        },
+        "signInButtonText": "登录"
     },
     "heroPage": {
         "heroProps": {
