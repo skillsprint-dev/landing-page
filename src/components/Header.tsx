@@ -1,12 +1,13 @@
 "use client";
-import * as React from "react";;
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import "../../i18n.mjs";;
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  const { user } = useUser();
   const changeLanguage = () => i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en');
   const headerProps = {
     logo: "/SkillSprint_logo.png",
@@ -88,32 +89,31 @@ export default function Header() {
             className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              {/* <li> */}
-              {/*   <a href="#" className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">Home</a> */}
-              {/* </li> */}
+            <div className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              
               {headerProps.navItems.map((item) => (
-                <li key={item.name}>
+                <div key={item.name}>
                   <a
                     href={item.href}
-                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-1 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     {item.name}
                   </a>
-                </li>
+                </div>
               ))}
-              <button onClick={changeLanguage}>EN / 中</button>
-              <SignedOut>
-                <SignInButton mode="modal">
-                  <button className="px-4 rounded-full bg-white text-black text-sm text-gray-700 font-semibold border border-black hover:bg-slate-200">
-                    {t('headerPage.signInButtonText')}
-                  </button>
-                </SignInButton>
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
-            </ul>
+              <button className="text-gray-700 hover:text-purple-700" onClick={changeLanguage}>EN / 中</button>
+              <div>
+                {user ? (
+                  <div >
+                    <UserButton afterSignOutUrl='/' />
+                  </div>
+                ) : (
+                  <div className="px-2 py-1 rounded-full bg-white text-gray-700 text-gray-700 font-semibold border border-black hover:bg-slate-100">
+                    <Link href='/sign-in'>{t('headerPage.signInButtonText')}</Link>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </nav>

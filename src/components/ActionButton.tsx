@@ -1,5 +1,5 @@
 "use client";
-import { SignIn, useUser } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 import { useTranslation } from "react-i18next";
 import "../../i18n.mjs";
 
