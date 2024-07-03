@@ -29,12 +29,7 @@ jobs:
       with:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Format Timestamp
-      id: timestamp
-      # Use `date` with a custom format to achieve the key=value format GITHUB_OUTPUT expects.
-      run: date -u "+now=%Y%m%d.%H%M%S.%3NZ" >> "$GITHUB_OUTPUT"   
+        password: ${{ secrets.GITHUB_TOKEN }} 
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
@@ -42,6 +37,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.timestamp.outputs.now }}
+        tags: ghcr.io/${{ github.repository }}/ss-landing-page:latest
     
       
