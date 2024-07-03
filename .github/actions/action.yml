@@ -1,9 +1,0 @@
-name: "My Docker Action"
-description: "A custom GitHub Action running in a Docker container"
-runs:
-  using: "docker"
-  image: "Dockerfile"
-  args:
-    - ${{ github.repository }}
-    - ${{ github.actor }}
-    - ${{ github.event_name }}
