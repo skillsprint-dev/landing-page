@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: my-registry/ss-landing-page
-
 jobs:
   build:
     runs-on: ubuntu-latest
