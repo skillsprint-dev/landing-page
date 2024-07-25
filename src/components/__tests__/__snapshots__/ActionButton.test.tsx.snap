@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionButton matches the snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 hvr-sweep-to-right dark:bg-gray-700"
+    href="https://calendly.com/skillsprint/free-assessment"
+  >
+    Book a Free Assessment
+  </a>
+</DocumentFragment>
+`;
