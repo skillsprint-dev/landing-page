@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Contect() {
   const contactProps = {
     title: "Contact Us",
-    email: "skillsprint.tech@gmail.com",
+    email: "contactus@talentsflow.ai",
   };
   return (
     <>
