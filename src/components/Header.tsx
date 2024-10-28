@@ -9,7 +9,7 @@ export default function Header() {
   const changeLanguage = () => i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en');
   const headerProps = {
     logo: "/SkillSprint_logo.png",
-    title: "SkillSprint",
+    title: "TalentsFlow",
     navItems: [
       {
         name: t("headerPage.headerPropsNavItems.home"),
